@@ -16,5 +16,5 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-default[:java86][:url] = "http://pigramsoftware.no-ip.biz/repo/jdk-7u45-windows-i586.exe"
+default[:java86][:url] = "https://dl.dropboxusercontent.com/u/36379525/jdk-7u45-windows-i586.exe"
 default[:java86][:policy] = "HKEY_LOCAL_MACHINE\\SOFTWARE\\JavaSoft\\Java Update\\Policy"
