@@ -18,15 +18,16 @@
 #
 # Instal javase
 windows_Package "jre-7u45-windows-i586" do
-  source node[:java86][:url]
+  source node['java86']['url']
   options "/s"
   installer_type :custom
   action :install
+  not_if {::File.exists?(node['java86']['file'])}
   not_if {reboot_pending?}
 end
 
 # disable java update
-registry_key node[:java86][:policy] do
+registry_key node['java86']['policy'] do
   values [{
     :name => "EnableJavaUpdate",
     :type => :dword,

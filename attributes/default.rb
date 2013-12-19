@@ -16,5 +16,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-default[:java86][:url] = "https://dl.dropboxusercontent.com/u/36379525/jre-7u45-windows-i586.exe"
-default[:java86][:policy] = "HKEY_LOCAL_MACHINE\\SOFTWARE\\JavaSoft\\Java Update\\Policy"
+default['java86']['url'] = "https://dl.dropboxusercontent.com/u/36379525/jre-7u45-windows-i586.exe"
+default['java86']['policy'] = "HKEY_LOCAL_MACHINE\\SOFTWARE\\JavaSoft\\Java Update\\Policy"
+default['java86']['file'] = "C:/Program Files (x86)/Java/jre7/bin/java.exe"
