@@ -17,9 +17,9 @@
 # limitations under the License.
 #
 # Instal javase
-windows_Package "jre-7u40-windows-i586" do
+windows_Package "jre-7u45-windows-i586" do
   source node[:java86][:url]
-  options "/qn"
+  options "/s"
   installer_type :custom
   action :install
   not_if {reboot_pending?}
